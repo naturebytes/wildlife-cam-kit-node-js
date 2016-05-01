@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Icons';
+    src:
+        url('../fonts/Icons.ttf?r8ra5w') format('truetype'),
+        url('../fonts/Icons.woff?r8ra5w') format('woff'),
+        url('../fonts/Icons.svg?r8ra5w') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+.fa-camera:before {
+    content: "\e900";
+}
+
+#stream{
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  max-width: 100%;
+  outline: 2px solid #2196F3;
+  outline-offset: -2px;
+}
+
+.stream-container{
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls{
+  height: 75px;
+  background-color: #2196F3;
+  padding-top: 25px;
+}
+
+.controls i{
+  color: white;
+  font-size: 50px;
+}
+
+.controls i:hover{
+  color: snow;
+  cursor: pointer;
+}
+
+.photo-container{
+  max-width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+.thumbnail{
+  display: inline-block;
+  height: 90;
+  width: 160;
+  margin: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+}
+
+#preview:not(.hidden){
+  position: fixed;
+  background-color: #2196F3;
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+  padding: 5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+}
+
+.hidden{
+  display: none;
+}
+
+#preview img{
+  width: 100%;
+}
+
+.preview-controls{
+  padding: 15px 20px 10px 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#delete-preview{
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#close-preview{
+  cursor: pointer;
+}
+
+@media(max-width: 560px){
+  #preview:not(.hidden){
+    width: 90%;
+    margin-top: 5px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

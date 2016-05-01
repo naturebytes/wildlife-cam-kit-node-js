@@ -1,0 +1,14 @@
+{
+  "name": "birdcam",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "node ./bin/start.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "mjpeg-proxy": "^0.2.0",
+    "request": "^2.70.0",
+    "socketio": "^1.0.0"
+  }
+}
